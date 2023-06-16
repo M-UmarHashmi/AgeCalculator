@@ -5,6 +5,9 @@
     /* font-size: 10px; */
     /* box-sizing: border-box; */
 }
+h1 {
+    display: none;
+}
 
 body {
     
@@ -53,6 +56,11 @@ input {
     padding-left: .5rem;
     /* margin-right: 1rem; */
     width: 7rem;
+    cursor: pointer;
+    /* transition: all 1s; */
+}
+input:hover {
+    border-color: #884bff;
 }
 div.image {
     background-color: #884bff;
@@ -66,6 +74,9 @@ div.image {
     /* margin: auto; */
     float: right;
 }
+div.image:hover {
+    background-color: black;
+}
 label {
     font-weight: 900;
     font-size: 11px;
@@ -73,7 +84,7 @@ label {
     margin-bottom: 0.7rem;
     letter-spacing: 5px;
     color: #474343;}
-h1 {
+h2 {
     font-size: 5rem;
     font-style: italic;
     line-height: 77px;
@@ -85,7 +96,7 @@ h1 {
     margin-top: 2rem;
     font-weight: 900;
 } */
-h1 span {
+h2 span {
     color: #884bff;
 }
 div.day span, div.month span, div.year span {
@@ -132,7 +143,7 @@ div.day span, div.month span, div.year span {
         position: relative;
         top: -25px;
     }
-    h1 {
+    h2 {
         font-size: 4rem;
         line-height: 59px;
     }
@@ -148,6 +159,18 @@ div.day span, div.month span, div.year span {
         margin-right: 0px;
     }
 
+}
+
+@media only screen and (max-width: 502px) {
+    h2 {
+        font-size: 3.8rem;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    h2 {
+        font-size: 3.7rem;
+    }
 }
 
 @media only screen and (max-width: 470px) {
@@ -166,12 +189,12 @@ div.day span, div.month span, div.year span {
     }
 }
 
-@media only screen and (max-width: 350px) {
-    h1 {
+@media only screen and (max-width: 355px) {
+    h2 {
         font-size: 3.6rem;
     }
 }
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 345px) {
     div.day, div.month, div.year {
         
         width: 5rem;
@@ -181,27 +204,27 @@ div.day span, div.month span, div.year span {
         font-size: 1.6rem;
 
     }
-    h1 {
+    h2 {
         font-size: 3.2rem;
     }
 }
 
 
 /* @media only screen and (max-width: 450px) {
-    h1 {
+    h2 {
         font-size: 3.6rem;
         line-height: 65px;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    h1 {
+    h2 {
         font-size: 3.4rem;
         line-height: 65px;
     }
 }
 @media only screen and (max-width: 375px) {
-    h1 {
+    h2 {
         font-size: 3.4rem;
         line-height: 65px;
     }

@@ -16,27 +16,44 @@ function checkValidity(){
   let checkMonth = false;
   let checkYear = false;
   let day  = document.getElementById('day').value;
-  if(day == "" || day < 0 || day > 31){
+  if (day == ""){
+    raiseError('day','This field is Required!');
+  }
+  else if( day <= 0 || day > 31){
     raiseError('day','Day should be valid!')
     
-  } else {
+  }
+   else {
     correctError('day',"");
     checkDay = true;
     
   }
   let month  = document.getElementById('month').value;
-  if(month == "" || month < 0 || month > 12){
+  
+  if (month == ""){
+    raiseError('month','This field is Required!');
+  }
+  else if( month <= 0 || month > 12){
     raiseError('month','Month should be valid!');
     check = false;
-  } else {
+  }
+  else if(day == 31 || day == 30 && month == 4){
+    raiseError('day','Day should be valid!')
+  }
+   else {
     correctError('month','');
     checkMonth = true;
     
   }
   let year  = document.getElementById('year').value;
-  if(year == "" || year < 0 || year > 2023){
+  if (year == ""){
+    raiseError('year','This field is Required!');
+  }
+  else if( year <= 0 || year > 2023){
     raiseError('year','Year should be valid!')
-  } else {
+  }
+  
+  else {
     correctError('year','');
     checkYear = true;
     
