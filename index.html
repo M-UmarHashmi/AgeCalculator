@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgeCalculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="first-row">
+        <div class="day">
+          <label for="day">DAY</label>
+          <input type="datetime" name="day" id="day" placeholder="DD" />
+          <span></span>
+        </div>
+
+        <div class="month">
+          <label for="day">MONTH</label>
+          <input type="datetime" name="month" id="month" placeholder="MM"/>
+          <span></span>
+          <!-- <datalist id="months" name="month">
+            <option value="01">January</option>
+            <option value="02">Feburary</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </datalist> -->
+        </div>
+
+        <div class="year">
+          <label for="day">YEAR</label>
+          <input type="datetime" name="year" id="year" placeholder="YYYY" />
+          <span></span>
+        </div>
+      </div>
+      <div class="image">
+          <img id="button" src="images/icon-arrow.svg" alt="icon-arrow">
+
+      </div>
+      <div class="second-row">
+        <h1>
+          <span id="yearShow" class="year">- -</span> years 
+        </h1>
+        <h1>
+          <span id="monthShow" class="year">- -</span> months
+        </h1>
+        <h1>
+          <span id="dayShow" class="year">- -</span> days
+        </h1>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

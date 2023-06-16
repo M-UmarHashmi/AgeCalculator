@@ -1,0 +1,208 @@
+* {
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    /* font-size: 10px; */
+    /* box-sizing: border-box; */
+}
+
+body {
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240 240 240);
+    font-family: 'Roboto', sans-serif;
+}
+main.container {
+    width: 50%;
+    height: 70vh;
+    background-color: white;
+    padding: 3.4rem;
+    border-radius: 2rem;
+    border-bottom-right-radius: 9rem;
+}
+div.first-row {
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* padding: 2rem 6rem; */
+    /* margin-right: 3rem; */
+    border-bottom: 1px solid #c0b8b8;
+    height: 8rem;
+    /* padding-right: 8rem; */
+
+}
+div.second-row {
+    margin-top: 1rem;
+}
+div.day, div.month, div.year {
+    display: flex;
+    flex-direction: column;
+    width: 8.8rem;
+    height: 5.7rem;
+    border-radius: 0.5rem;
+    margin-right: 3rem;
+}
+input {
+    height: 5.7rem;
+    border-radius: 0.5rem;
+    border: 1px solid #c0b8b8;
+    font-size: 2.3rem;
+    padding-left: .5rem;
+    /* margin-right: 1rem; */
+    width: 7rem;
+}
+div.image {
+    background-color: #884bff;
+    padding: 1rem;
+    border-radius: 100px;
+    position: relative;
+    top: -36px;
+    /* right: 355px; */
+    cursor: pointer;
+    width: 3rem;
+    /* margin: auto; */
+    float: right;
+}
+label {
+    font-weight: 900;
+    font-size: 11px;
+    line-height: 0.9;
+    margin-bottom: 0.7rem;
+    letter-spacing: 5px;
+    color: #474343;}
+h1 {
+    font-size: 5rem;
+    font-style: italic;
+    line-height: 77px;
+    letter-spacing: -5px;
+    margin: 0;
+    font-weight: 900;
+}
+/* div.second-row {
+    margin-top: 2rem;
+    font-weight: 900;
+} */
+h1 span {
+    color: #884bff;
+}
+div.day span, div.month span, div.year span {
+    color: red;
+    font-size: 12px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 1200px) {
+    div.day, div.month, div.year {
+        margin-right: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 1085px) {
+    div.day, div.month, div.year {
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    input {
+        font-size: 2rem;
+        width: 7rem;
+    }
+    div.day, div.month, div.year {
+        margin-right: .3rem;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    div.day, div.month, div.year {
+        width: 7.8rem;
+    }
+    main.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.second-row {
+        margin: 0;
+        position: relative;
+        top: -25px;
+    }
+    h1 {
+        font-size: 4rem;
+        line-height: 59px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    input {
+        width: 6rem;
+    }
+    div.day, div.month, div.year {
+        /* align-items: center; */
+        width: 6.8rem;
+        margin-right: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+    input {
+        width: 5rem;
+        font-size: 1.8rem;
+    }
+    div.day, div.month, div.year {
+        
+        width: 6rem;
+    }
+}
+@media only screen and (max-width: 460px) {
+    main.container {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+}
+@media only screen and (max-width: 330px) {
+    div.day, div.month, div.year {
+        
+        width: 5rem;
+    }
+    input {
+        width: 4rem;
+        font-size: 1.6rem;
+
+    }
+    h1 {
+        font-size: 3.2rem;
+    }
+}
+
+
+/* @media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 3.6rem;
+        line-height: 65px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 3.4rem;
+        line-height: 65px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    h1 {
+        font-size: 3.4rem;
+        line-height: 65px;
+    }
+} */
