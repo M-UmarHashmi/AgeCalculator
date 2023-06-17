@@ -148,6 +148,9 @@ div.day span, div.month span, div.year span {
 }
 
 @media only screen and (max-width: 750px) {
+    body {
+        height: 90vh;
+    }
     div.day, div.month, div.year {
         width: 7.8rem;
     }
